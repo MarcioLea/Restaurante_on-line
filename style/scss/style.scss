@@ -1,0 +1,20 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.scrollspySite{
+    position: relative;
+    overflow: auto;
+    height: 430px;
+}
+
+.nav-pills {
+    .nav-link.active,
+    .show > .nav-link {
+      color: $white;//$nav-pills-link-active-color;
+      background-color: $yellow;//$nav-pills-link-active-bg;
+    }
+  
+    .nav-link,
+    .show > a.nav-link {
+      color: $yellow;//$nav-pills-link-active-color;
+     }
+  }
