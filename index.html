@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="style/css/bootstrap.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/css/font-awesome/css/font-awesome.css">
+
+    <title>Restaurante Italianinho</title>
+  </head>
+  <body>
+    
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+
+          <div class="container">
+
+          <a class="navbar-brand h1 mb-0" href="./">Italianinho on-line</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSite">
+
+            <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item">
+
+                  <a class="nav-link" href="./">Início</a>
+
+              </li>
+
+              <li class="nav-item dropdown">
+
+              <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" id="navCardapio">
+
+                  Cardápio
+
+                </a>
+
+                <div class="dropdown-menu">
+
+                  <a class="nav-link" href="#item1">Massas</a>
+                  <a class="nav-link" href="#item2">Pizzas</a>
+                  <a class="nav-link" href="#item3">Vinhos</a>
+
+              </div>
+
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="#precos">Tabela de preços</a>
+  
+            </li>
+
+          <li class="nav-item">
+
+            <a class="nav-link" href="#pedidos">Pedidos</a>
+
+          </li>
+
+         
+
+        <li class="nav-item">
+
+          <a class="nav-link" href="#cadastro">Trabalhe conosco</a>
+
+      </li>
+
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item dropdown">
+
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+
+                    Redes Sociais
+
+                  </a>
+
+                  <div class="dropdown-menu">
+
+                    <a class="dropdown-item" href="https://pt-br.facebook.com/" target="_blank">Facebook</a>
+                    <a class="dropdown-item" href="https://twitter.com/login?lang=pt" target="_blank">Twitter</a>
+                    <a class="dropdown-item" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    
+                  </div>
+
+                </li>
+
+            </ul>
+
+            <a class="btn btn-outline-danger" href="https://www.ifood.com.br/" target="_blank"> Ifood</a>
+
+           <!-- <form class="form-inline">
+
+                <input class="form-control ml-4 mr-2 mt-2 mb-2" type="search" placeholder="Pesquisar...">
+                <button class="btn btn-white" type="submit">OK</button>
+
+            </form>-->
+
+          </div>
+
+        </div>
+
+      </nav>
+
+      <div id="carouselSite" class="carousel slide "data-ride="carousel" >
+
+        <ol class="carousel-indicators">
+
+          <li data-target="carouselSite" data-slide-to="0" class="active"></li>
+          <li data-target="carouselSite" data-slide-to="1"></li>
+          <li data-target="carouselSite" data-slide-to="2"></li>
+        </ol>
+
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <img src="img/img01.jpg" class="img-fluid d-block">
+            
+            <div class="carousel-caption d-none d-md-block text-light">
+
+              <h1>Pizzas</h1>
+              <p class="lead">Uma autêntica pizza italiana, "fatto nello stesso modo di Via dei Tribunali", em Nápoles</p>
+
+            </div>
+
+          </div>
+
+          <div class="carousel-item">
+
+            <img src="img/img02.jpg" class="img-fluid d-block">
+
+            <div class="carousel-caption d-none d-md-block text-light">
+
+              <h1>Massas</h1>
+              <p class="lead"> Nada melhor uma boa massa. E niente di meglio della pasta di un ristorante italiano. </p>
+
+            </div>
+
+          </div>
+
+          <div class="carousel-item">
+
+            <img src="img/img03.jpg" class="img-fluid d-block">
+
+            <div class="carousel-caption d-none d-md-block text-light">
+
+              <h1>Vinhos</h1>
+              <p class="lead"> Harmonizar vinho e massas é uma prática que "rende l'esperienza ancora più speciale."</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+            <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+
+                <span  class="carousel-control-prev-icon"></span>
+                <span  class="sr-only">Anterior</span>
+
+            </a>
+
+            <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+
+              <span  class="carousel-control-next-icon"></span>
+              <span  class="sr-only">Avançar</span>
+
+          </a>
+
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div  class="col-12 text-center my-5">
+
+            <h1 class="display-3 text-warning"><em>Cardápio do Italianinho</em></h1>
+            <p>Conheça uma das culinárias mais populares do mundo, com suas pizzas, massas, vinhos e outros tipos de preparações com ingredientes e pratos de diversas regiões da Itália. Temos diversos pratos regionais importantes que também assumiram caráter nacional e proliferaram, por todo o mundo.</p>
+
+          </div>
+
+        </div>
+
+        <div class="row md-5">
+
+          <div class="col-sm-6 col-md-2 mb-2">
+
+            <nav id="navbarVertical" class="navbar navbar-light bg-light">
+
+              <nav class="nav nav-pills flex-column">
+
+                <a class="nav-link bg-warning text-light" href="#item1">Massas</a>
+
+                <nav class="nav nav-pilss flex-column">
+
+                  <a class="nav-link ml-3" href="#item1-1">Lasanha</a>
+                  <a class="nav-link ml-3" href="#item1-2">Ravioli</a>
+                  <a class="nav-link ml-3" href="#item1-3">Gnocchi</a>
+                  <a class="nav-link ml-3" href="#item1-4">Trofie</a>
+                  <a class="nav-link ml-3" href="#item1-5">Calzone</a>
+                  <a class="nav-link ml-3" href="#item1-6">Panzerotti</a>
+                  <a class="nav-link ml-3" href="#item1-7">Stromboli</a>
+
+                </nav>
+
+                <a class="nav-link my-2 bg-warning text-light" href="#item2">Pizzas</a>
+
+                <nav class="nav nav-pilss flex-column">
+
+                  <a class="nav-link ml-3" href="#item2-1">Margherita</a>
+                  <a class="nav-link ml-3" href="#item2-2">Marinara</a>
+                  <a class="nav-link ml-3" href="#item2-3">Parmegiana</a>
+                  <a class="nav-link ml-3" href="#item2-4">Bianca romana</a>
+                  
+                </nav>
+
+                <a class="nav-link my-2 bg-warning text-light" href="#item3">Vinhos</a>
+
+                <nav class="nav nav-pills flex-column">
+
+                  <a class="nav-link ml-3" href="#item3-1">Mannara</a>
+                  <a class="nav-link ml-3" href="#item3-2">Sangiovese </a>
+
+                </nav>
+
+              </nav>
+
+            </nav>
+
+          </div>
+
+          <div class="col-sm-6 col-md-10 mb-5 text-center">
+
+            <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+
+              <h4 id="item1">Massas</h4>
+            
+              <h5 id="item1-1">Lasanha</h5>
+              <p>Lasanha ao forno preparada com fitas largas colocadas em camadas, e entremeadas com recheio de queijo e carne moída ou frango e molho.</p>
+              <img src="img/lasanha.jpg">
+
+              <h5 id="item1-2">Ravioli</h5>
+              <p>Pequenos pastéis de massa feita com farinha de trigo e ovo, recheadas com carne, peixe, vegetais ou queijo e cozidos em  molho típicos italianos.</p>
+              <img src="img/ravioli.jpg">
+
+              <h5 id="item1-3">Gnocchi</h5>
+                <p>Mistura de batata com farinha de trigo servido com molhos sugo, bolonhesa ou branco.</p>
+                <img src="img/gnochi.jpg">
+
+              <h5 id="item1-4">Trofie</h5>
+                <p>Massa fresca servida com molho pesto e cubinhos de batatas e vagem.</p>
+                <img src="img/trofie.jpg">
+
+              <h5 id="item1-5">Calzone</h5>
+              <p>Disco de pizza com tamanho da pizza normal, dobrada ao meio, como um "pastel assado", com a massa igual à da pizza, redondo, dobrado ao meio formando uma meia-lua bastante - "gorda", devido ao duplo - recheio de ambas as partes que se dobraram ao meio é recheado com queijo mozarela, parmesão ou ricota e outros cinco queijos da pizza tradicional, molho de tomates, verduras ou legumes e carnes processadas como linguiça, presunto ou lombo defumado e charque ou carne seca, goiabada e queijo.</p>
+              <img src="img/calzone.jpg">
+
+              <h5 id="item1-6">Panzerotti</h5>
+              <p>Calzone pequeno, tanto no formato quanto no tipo de massa usada para seu preparo.</p>
+              <img src="img/panzerotti.jpg">
+
+              <h5 id="item1-7">Stromboli</h5>
+              <p>Salgado com massa é de pão italiano ou de pizza semelhante a um calzone recheado com vários queijos italianos e frios ou vegetais.</p>
+              <img src="img/stromboli.jpg">
+                            
+              <h4 id="item2">Pizzas</h4>
+              <h5 id="item2-1">Margherita</h5>
+              <p> Pizza napolitana temperada com tomate e muzzarela. </p>
+              <img src="img/margerita.jpg">
+
+              <h5 id="item2-2">Marinara</h5>
+              <p>Pizza napolitana temperada com tomate, azeite de oliva extra virgem, orégano e alho. </p>
+              <img src="img/marinara.jpg">
+
+              <h5 id="item2-3">Parmegiana</h5>
+              <p>Pizza com a molho do tomate, queijo mussarela, as fatias de berinjela e o parmesão ralado.</p>
+              <img src="img/parmegiana.jpg">
+
+              <h5 id="item2-4">Bianca Romana</h5>
+              <p>Pizza com mussarela, tomate, manjericão e azeite e sal.</p>
+              <img src="img/bianca.jpg">
+
+              <h4 id="item3">Vinhos</h4>
+              <h5 id="item3-1">Mannara</h5>
+              <p>Ótimo com pratos tipicamente italianos como massas, pizza, molhos vermelhos e queijos leves.</p>
+              <img src="img/manara.jpg">
+
+              <h5 id="item3-2">Sangiovese</h5>
+              <p>“Vinho tinto de verão”, para ser servido mais gelado num dia ensolarado. Vermelho rubi claro. No nariz, aromas de frutas vermelhas, morango, framboesa e cereja, e toques de especiarias. Na boca é seco, leve e equilibrado. Sabores de frutas vermelhas frescas e taninos muito macios.</p>
+              <img src="img/sangiovese.jpg">
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+        
+
+          </div>
+
+          </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="jumbotron jumbotron-fluid" id="precos">
+
+          <div class="container">
+
+            <div class="row">
+
+              <div class="col-12 text-center">
+
+                <h1 class="display-4">Tabela de preços</h1>
+                <p class="lead">Italianinho</p>
+                <hr>
+
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-12">
+
+                <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+
+                  <li class="nav-item">
+
+                    <a class="nav-link active bg-success" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">Massas</a>
+                  
+                  </li>
+
+                    <li class="nav-item">
+
+                    <a class="nav-link bg-light" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">Pizzas</a>
+
+                  </li>
+
+                  <li class="nav-item">
+
+                    <a class="nav-link bg-danger" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">Vinhos</a>
+                  </li>
+
+
+                </ul>
+
+              <div class="tab-content" id="nav-pills-content">
+
+                <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+
+                  <div class="row">
+
+                  <div class="col-sm-12">
+
+                    <div class="responsive text-center">
+                      
+                      <table class="table table-striped">
+                        <tr>
+                            <td>Lasanha</td>
+                            <td>R$ 30,00</td>
+                        </tr>
+                        <tr>
+                            <td>Ravioli</td>
+                            <td>R$ 25,00</td>
+                        </tr>
+                        <tr>
+                            <td>Gnocchi</td>
+                            <td>R$ 50,00</td>
+                        </tr>
+                        <tr>
+                            <td>Trofie</td>
+                            <td>R$ 40,00</td>
+                        </tr>
+                        <tr>
+                            <td>Calzone</td>
+                            <td>R$ 15,00</td>
+                        </tr>
+                        <tr>
+                          <td>Panzerotti</td>
+                          <td>R$ 20,00</td>
+                     </tr>
+                      <tr>
+                        <td>Stromboli</td>
+                        <td>R$ 20,00</td>
+                     </tr>
+
+                    </table>
+
+                    </div>
+
+                  </div>
+
+                </div>
+                  
+
+                </div>
+
+                <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+
+                  <div class="row">
+
+                    <div class="col-sm-12">
+  
+                      <div class="responsive text-center">
+                        
+                        <table class="table table-striped">
+                          <tr>
+                              <td>Margherita</td>
+                              <td>R$ 40,00</td>
+                          </tr>
+                          <tr>
+                              <td>Parmegiana</td>
+                              <td>R$ 50,00</td>
+                          </tr>
+                          <tr>
+                              <td>Bianca Romana</td>
+                              <td>R$ 30,00</td>
+                          </tr>
+                            
+                      </table>
+  
+                      </div>
+  
+                    </div>
+
+                </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+
+                  <div class="row">
+
+                    <div class="col-sm-12">
+  
+                      <div class="responsive text-center">
+                        
+                        <table class="table table-striped">
+                          <tr>
+                              <td>Mannara</td>
+                              <td>R$ 70,00</td>
+                          </tr>
+                          <tr>
+                              <td>Sangiovese</td>
+                              <td>R$ 95,00</td>
+                          </tr>
+                        
+                      </table>
+  
+                      </div>
+  
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+      </div>
+
+      <div class="row justify-content-sm-center" id="pedidos">
+
+        <div class="col-sm-6 col-md-4">
+
+          <div class="card mb-5">
+            
+            <img class="card-img-top" src="img/card01.jpg"> 
+            <div class="card-body">
+              
+              <h5 class="card-title text-center">Pedidos</h5>
+              <h6 class="card-subtitle"> On-line </h6>
+              <p class="card-text">O restaurante italianinho trabalha totalmente de forma virtual, em breve teremos área de pedidos online no site.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+
+              <li class="list-group-item text-center">Massas</li>
+              <li class="list-group-item text-center">Pizzas</li>
+              <li class="list-group-item text-center">Vinhos</li>
+            </ul>
+            <div class="card-body text-center">
+              <a href="" class="card-link" data-toggle="modal" data-target="#siteModal">Pedido</a>
+            </div>
+            <div class="card-footer text-muted"></div>
+              
+          </div>
+
+        </div>
+
+        </div>
+
+      <div class="container" id="cadastro">
+
+        <div class="row">
+          
+          <div class="col-12">
+
+            <h1 class="display-4 text-center my-5"><i class="fa fa-paper-plane text-dark"></i> Trabalhe conosco</h1>
+
+          </div>
+
+        </div>
+
+        <div class="row justify-content-center mb-5">
+
+          <div class="col-sm-12 col-md-10 col-lg-8">
+
+           <form>
+
+            <div class="form-row">
+
+              <div class="form-group col-sm-6">
+
+                <label for="inputNome">Nome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+
+            
+            </div>
+
+          
+            <div class="form-group col-sm-6">
+
+              <label for="inputEmail">E-mail</label>
+              <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+
+            </div>
+          </div>
+
+          <div class="form-row">
+
+          <div class="form-group col-sm-12">
+
+            <label for="inputExp">Experiência</label>
+            <input type="text" class="form-control" id="inputExp" placeholder="Experiência">
+
+        </div>
+
+       </div>
+
+       <div class="form-row">
+
+        <div class="form-group col-sm-6">
+
+          <label for="inputFone">Fone</label>
+          <input type="text" class="form-control" id="inputFone" placeholder="Telefone">
+
+      </div>
+
+      <div class="form-group col-sm-4">
+
+        <label for="inputFunc">Função</label>
+        <select id="inputFunc" class="form-control">
+
+          <option selected>Escolha...</option>
+          <option>Garçon</option>
+          <option>Cozinha</option>
+          <option>Administrativo</option>
+
+        </select>
+
+    </div>
+
+    <div class="form-group col-sm-2">
+
+      <label for="inputIdade">Idade</label>
+      <input type="text" class="form-control" id="inputIdade" placeholder="Idade">
+
+  </div>
+          
+
+            </div>
+
+            <div class="form-row">
+
+              <div class="form-group col-sm-12">
+
+                <div class="form-check">
+
+                  <label class="form-check-label">
+
+                    <input class="form-check-input" type="checkbox">Aceito contato profissional por e-mail ou telefone.
+
+                  </label>
+
+                </div>
+
+              </div>
+
+             </div>
+
+             <div class="form-row">
+
+              <div class="col-sm-12">
+
+                <button type="submit" class="btn btn-dark">Cadastrar</button>
+                <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="Ajuda" data-content="Cadastro ficticio, área em desenvolvimento...">Ajuda</a>
+
+              </div>
+
+             </div>
+
+           </form>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-12 md-3">
+
+            <hr>
+
+          </div>
+
+          <div class="col-sm-4">
+
+            <h3>Culinária da Itália</h3>
+            <p>A culinária italiana evoluiu através dos séculos, ao longo das mais variadas alterações sociais e políticas, hoje é uma das culinárias mais populares do mundo principalmente com suas com suas pizzas, massas e vinhos.</p>
+          </div>
+
+          <div class="col-sm-4">
+
+            <h3>Cardápio</h3>
+            <div class="list-group text-center">
+
+              <a href="#item1" class="list-group-item list-group-item-action list-group-item-warning">Massas</a>
+              <a href="#item2" class="list-group-item list-group-item-action list-group-item-warning">Pizzas</a>
+              <a href="#item3" class="list-group-item list-group-item-action list-group-item-warning">Vinhos</a>
+              
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+
+            <h3>Desenvolvedor do site</h3>
+
+            <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+
+              <a class="btn btn-outline-primary" href="https://www.facebook.com/profile.php?id=100003879021282" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a>
+              <a class="btn btn-outline-info" href="https://twitter.com/mar_leandro" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+                           
+
+            </div>
+
+          </div>
+
+          <div class="col-12 mt-5">
+
+            <blockquote class="bloquequote text-center">
+
+              <p class="mb-0">Site fictício com fim educacional - Márcio Oliveira</p>
+              <footer class="blockquote-footer">Imagens apenas ilustrativas de banco de imagens gratuitos, pratos baseados em pratos tradicionais verdadeiros.<cite title="Site fictício com fim educacional"></cite></footer>
+
+            </blockquote>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!--Modal-->
+      <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+
+        <div class="modal-dialog modal-sm" role="document">
+
+          <div class="modal-content">
+
+            <div class="modal-header">
+
+              <h5 class="modal-title">Pedido</h5>
+              <button type="button" class="close" data-dismiss="modal">
+
+                <span>x</span>
+
+              </button>
+            </div>
+         
+
+              <div class="modal-body">
+
+                
+              <p>Esse é um site ficcional, apenas para fins educacionais, se voce gostou do site e tiver interesse em um site com as mesmas características, pode entrar em contato com o desenvolvedor.</p>
+
+                <p>Márcio Oliveira</p>  
+                <p>Telefone: (21) 999636093</p>  
+                <p>Email: marciolea@gmail.com</p>
+
+              </p>
+  
+              </div>
+
+             
+
+                <div class="modal-footer">
+    
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+    
+                </div>
+
+     <script src="js\jquery.min.js"></script>
+    <script src="js\popper.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+                
+    <!--<script src="node_modules\jquery\dist\jquery.js"></script>
+    <script src="node_modules\popper.js\dist\umd\popper.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>-->
+    
+    <script>
+
+      $(function () {
+
+        $('[data-toggle="popover"]').popover()
+
+      })
+
+    </script>
+   
+  </body>
+</html>
