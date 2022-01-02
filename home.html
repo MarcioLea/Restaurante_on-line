@@ -528,14 +528,14 @@
 
           <div class="col-sm-12 col-md-10 col-lg-8">
 
-           <form>
+           <form action="cadastro.php" method="POST">
 
             <div class="form-row">
 
               <div class="form-group col-sm-6">
 
                 <label for="inputNome">Nome</label>
-                <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                <input type="text" class="form-control" id="inputNome" name="nome" placeholder="Nome">
 
             
             </div>
@@ -544,7 +544,7 @@
             <div class="form-group col-sm-6">
 
               <label for="inputEmail">E-mail</label>
-              <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+              <input type="text" class="form-control" id="inputEmail" name="email" placeholder="Email">
 
             </div>
           </div>
@@ -554,7 +554,7 @@
           <div class="form-group col-sm-12">
 
             <label for="inputExp">Experiência</label>
-            <input type="text" class="form-control" id="inputExp" placeholder="Experiência">
+            <input type="text" class="form-control" id="inputExp" name="experiencia" placeholder="Experiência">
 
         </div>
 
@@ -564,15 +564,15 @@
 
         <div class="form-group col-sm-6">
 
-          <label for="inputFone">Fone</label>
-          <input type="text" class="form-control" id="inputFone" placeholder="Telefone">
+          <label for="inputFone">Telefone</label>
+          <input type="text" class="form-control" id="inputFone" name="telefone" placeholder="Telefone">
 
       </div>
 
       <div class="form-group col-sm-4">
 
         <label for="inputFunc">Função</label>
-        <select id="inputFunc" class="form-control">
+        <select id="inputFunc" name="funcao" class="form-control">
 
           <option selected>Escolha...</option>
           <option>Garçon</option>
@@ -585,8 +585,8 @@
 
     <div class="form-group col-sm-2">
 
-      <label for="inputIdade">Idade</label>
-      <input type="text" class="form-control" id="inputIdade" placeholder="Idade">
+      <label for="inputNasc">Nascimento</label>
+      <input type="text" class="form-control" id="inputNasc" name="nascimento" placeholder="Nascimento">
 
   </div>
           
